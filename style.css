@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .h1 {
@@ -132,7 +132,7 @@ body {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, 0.6);
+    color: #F6CFC1;
 }
 
 .d-bloc .a-btn:hover,
@@ -238,6 +238,7 @@ body {
 .navbar-brand h1 .fonia-font {
     font-family: "Shrikhand", sans-serif;
     font-size: 0.6em;
+    color: #000000;
 }
 
 .nav-center .navbar-brand img {
@@ -247,6 +248,9 @@ body {
 .navbar-brand h1 .Roboto {
     font-family: "Roboto", sans-serif;
     font-size: 0.3em;
+    color: #000000;
+    position: relative;
+    bottom: 20px;
     padding-left: 55px;
 }
 
@@ -301,7 +305,7 @@ nav .caret {
 .keywords {
 }
 
-/* SECTION PRESENTATION */
+/* SECTION 1 PRESENTATION */
 
 .bgc-dark-slate-blue {
     background-color: #364577;
@@ -384,7 +388,7 @@ nav .caret {
 }
 
 .bg-t-edge {
-    background: top no-repeat;
+    /* background: top no-repeat; */
 }
 
 .bloc-bg-texture::before {
@@ -403,7 +407,7 @@ nav .caret {
 }
 
 .b-parallax {
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
 }
 
 #bloc-1-hero h1 {
@@ -416,7 +420,7 @@ nav .caret {
 }
 
 .tc-white {
-    color: #f3976c !important;
+    color: #ffffff !important;
 }
 
 .btn {
@@ -447,7 +451,7 @@ nav .caret {
     margin: 0 0 5px 5px;
 }
 
-/* SECTION SERVICES */
+/* SECTION 2 SERVICES */
 
 .d-bloc .panel,
 .l-bloc {
@@ -535,10 +539,10 @@ nav .caret {
     margin-top: 30px;
 }
 
-/* SECTION WHAT I DO */
+/* SECTION 3 WHAT I DO */
 
 .bgc-atomic-tangerine {
-    background-color: #f3976c;
+    background-color: #D4450C;
 }
 
 .bg-presentation {
@@ -571,7 +575,7 @@ nav .caret {
     text-decoration: underline !important;
 }
 
-/* SECTION PORTFOLIO */
+/* SECTION 4 PORTFOLIO */
 
 .bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
@@ -590,7 +594,7 @@ nav .caret {
     background: repeat;
 }
 
-/* SECTION CTA */
+/* SECTION 5 CTA */
 
 h1,
 h2,
@@ -604,17 +608,53 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757 !important;
+    color: #000000 !important;
 }
 
 .btn-atomic-tangerine {
-    background: #f3976c;
+    background: #d4450c;
     color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
     background: #c27956 !important;
     color: #ffffff !important;
+}
+
+/* SECTION bloc-6 */
+
+.bg-dots-bg {
+    background-image: url("img/dots-bg.png");
+}
+
+.hero-bloc-text {
+    font-size: 38px;
+}
+
+/* SECTION bloc-7 */
+
+/* SCROLL TO TOP BUTTON */
+
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    z-index: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.scrollToTop span {
+    margin-top: 6px;
+}
+
+.btn-d,
+.btn-d:hover,
+.btn-d:focus {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* FOOTER */
@@ -625,12 +665,16 @@ a {
 }
 
 .social {
-    max-width: 400px;
+    /* max-width: 400px; */
     margin: auto auto auto auto;
 }
 
 .icon-md {
     font-size: 30px !important;
+}
+
+.keywords {
+    color: #FFFFFF;
 }
 
 /*** FIN FOOTER ***/
@@ -671,13 +715,6 @@ a {
     margin-bottom: 40px;
 }
 
-.btn-d,
-.btn-d:hover,
-.btn-d:focus {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.3);
-}
-
 .panel-sq,
 .panel-sq .panel-heading,
 .panel-sq .panel-footer {
@@ -701,20 +738,9 @@ a {
     box-shadow: none;
 }
 
-.scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    z-index: 500;
-    transition: all 0.3s ease-in-out;
-}
 
-.scrollToTop span {
-    margin-top: 6px;
-}
+
+
 
 .showScrollTop {
     font-size: 14px;
@@ -830,10 +856,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-.hero-bloc-text {
-    font-size: 38px;
-}
-
 .hero-bloc-text-sub {
     font-size: 36px;
 }
@@ -858,10 +880,6 @@ a[data-lightbox]:hover img {
 
 .ltc-atomic-tangerine:hover {
     color: #c27956 !important;
-}
-
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
 }
 
 @media (min-width: 768px) {
@@ -928,13 +946,13 @@ a[data-lightbox]:hover img {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
