@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -8,18 +8,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
 
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-	<title>La Panthère: Entreprise webdesign Lyon - Page 2</title>
+	<script src="./js/jquery-2.1.0.min.js"defer></script>
+	<script src="./js/bootstrap.min.js"defer></script>
+	<script src="./js/blocs.min.js"defer></script>
+	<script src="./js/jqBootstrapValidation.js"defer></script>
+	<script src="./js/formHandler.js"defer></script>
+	<title>La Panthère: Entreprise webdesign Lyon - Contact</title>
 
 
 	<!-- Analytics -->
@@ -31,7 +31,7 @@
 <body>
 	<!-- Principal conteneur -->
 
-	<div class="page-container">
+	<main class="page-container">
 
 		<!-- HEADER -->
 
@@ -39,8 +39,14 @@
 			<div class="container bloc-sm">
 				<nav class="navbar row">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
-								alt="atlanta web design logo" height="40" /></a>
+						<a class="navbar-brand" href="index.html">
+							<h1>
+								<img src="img/logo.png" alt="paris web design logo agence web meilleure agence"	height="40" />
+								<span class="fonia-font">La Panthère<br /></span>
+								<span class="Roboto">AGENCE DE WEB DESIGN LYON</span>
+							</h1>
+						</a>
+
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
 							data-toggle="collapse" data-target=".navbar-1">
 							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
@@ -55,7 +61,7 @@
 							<li>
 							</li>
 							<li>
-								<a href="page2.html">page2 &gt;</a>
+								<a href="page2.html">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -70,9 +76,9 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
-						<h1 class="text-center hero-bloc-text tc-white">
+						<h2 class="text-center hero-bloc-text tc-white">
 							Parlons web design !
-						</h1>
+						</h2>
 						<p class="text-center mg-lg tc-white tight-width-whitespace">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
@@ -91,28 +97,28 @@
 						<form id="form_1" novalidate success-msg="Your message has been sent."
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
-								<label>
+								<label for="name">
 									Nom
 								</label>
-								<input id="name" class="form-control" required />
+								<input id="name" class="form-control" aria-labelledby="name" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
-								</label>
-								<input id="email" class="form-control" type="email" required />
+								</label >
+								<input id="email" class="form-control" type="email" aria-labelledby="Adresse email" required />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+								<input class="form-control" type="email" required id="input_504" aria-labelledby="input_504" />
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required></textarea>
+									required aria-labelledby="message"></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
@@ -146,23 +152,23 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-twitter icon-md">Twitter</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-facebook icon-md">Facebook</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md">Dribble</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
 									<a class="social" href="index.html"><span
-											class="fa fa-instagram icon-md"></span></a>
+											class="fa fa-instagram icon-md">Instagram</span></a>
 								</div>
 							</div>
 						</div>
@@ -171,7 +177,7 @@
 			</div>
 		</footer>
 
-	</div>
+	</main>
 
 
 </body>
