@@ -8,17 +8,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<!--link rel="stylesheet" type="text/css" href="./css/bootstrap.css"-->
+	<link rel="preload" href="./css/bootstrap.css" as="style" onload="this.onload=null; this.rel='stylesheet'">
+	<noscript><link rel="stylesheet" href="./css/bootstrap.css"></noscript>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
 
-	<script src="./js/jquery-2.1.0.min.js"defer></script>
-	<script src="./js/bootstrap.min.js"defer></script>
-	<script src="./js/blocs.min.js"defer></script>
-	<script src="./js/jqBootstrapValidation.js"defer></script>
-	<script src="./js/formHandler.js"defer></script>
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
 	<title>La Panthère: Entreprise webdesign Lyon - Contact</title>
 
 
@@ -41,7 +44,7 @@
 					<div class="navbar-header">
 						<a class="navbar-brand" href="index.html">
 							<h1>
-								<img src="img/logo.png" alt="paris web design logo agence web meilleure agence"	height="40" />
+								<img src="img/logo.png" alt="Lyon web, design logo, agence web, meilleure agence"	height="40" />
 								<span class="fonia-font">La Panthère<br /></span>
 								<span class="Roboto">AGENCE DE WEB DESIGN LYON</span>
 							</h1>
@@ -71,8 +74,7 @@
 
 		<!-- SECTION bloc-6 -->
 
-		<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
-			id="bloc-6">
+		<section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
@@ -94,31 +96,31 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" novalidate data-success-msg="Your message has been sent."
+							data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
 								<label for="name">
 									Nom
 								</label>
-								<input id="name" class="form-control" aria-labelledby="name" required />
+								<input id="name" class="form-control" aria-label="name" required />
 							</div>
 							<div class="form-group">
 								<label for="email">
 									Adresse email
 								</label >
-								<input id="email" class="form-control" type="email" aria-labelledby="Adresse email" required />
+								<input id="email" class="form-control" type="email" aria-label="email" required />
 							</div>
 							<div class="form-group">
 								<label for="input_504">
 									Comment nous avez-vous connu ?
 								</label>
-								<input class="form-control" type="email" required id="input_504" aria-labelledby="input_504" />
+								<input class="form-control" type="text" required id="input_504" aria-label="Comment nous avez-vous connu ?" />
 							</div>
 							<div class="form-group">
 								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required aria-labelledby="message"></textarea>
+									required aria-label="message"></textarea>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">

@@ -1,6 +1,11 @@
 @import url("https://font.gooova.com/fonts/13732/fonia-font.html");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css?family=Shrikhand");
+:root{
+    --safe-area-inset-left:15px;
+    --safe-area-inset-right:15px;
+    }
+    
 
 p {
     font-size: 14px;
@@ -30,7 +35,7 @@ h4 {
 a,
 button {
     transition: all 0.3s ease-in-out;
-    outline: none !important;
+    /* outline: none !important; */
 }
 
 a:hover {
@@ -1112,8 +1117,8 @@ a[data-lightbox]:hover img {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: var(--safe-area-inset-left);
+        padding-right: var(--safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -1123,8 +1128,8 @@ a[data-lightbox]:hover img {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: var(--safe-area-inset-left);
+        padding-right: var(--safe-area-inset-right);
     }
 }
 /*** 1024 px ***/
