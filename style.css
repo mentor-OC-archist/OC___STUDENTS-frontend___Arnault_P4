@@ -231,7 +231,7 @@ body {
 }
 
 button {
-    outline: none !important;
+    /*outline: none !important;*/
 }
 
 .navbar-toggle {
@@ -419,7 +419,7 @@ nav .caret {
     color: #ffffff !important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
 }
 
@@ -540,7 +540,7 @@ h3 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.png");
 }
 
 .bloc-lg {
