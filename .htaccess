@@ -17,12 +17,6 @@ Header always set X-Content-Type-Options "nosniff"
 </IfModule>
 # END Cache-Control Headers
 
-<VirtualHost *:80>
-	ServerName https://ngouassa.github.io/Projet-4
-	Redirect / https://www.ngouassa.github.io/Projet-4 
-</VirtualHost>
-
-
 # BEGIN Expires Headers
 <IfModule mod_expires.c>
 ExpiresActive On
